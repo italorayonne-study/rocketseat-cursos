@@ -1,0 +1,12 @@
+/workspaces/AuctionDemo/AuctionDemo.Model/bin/Debug/net8.0/AuctionDemo.Model.deps.json
+/workspaces/AuctionDemo/AuctionDemo.Model/bin/Debug/net8.0/AuctionDemo.Model.dll
+/workspaces/AuctionDemo/AuctionDemo.Model/bin/Debug/net8.0/AuctionDemo.Model.pdb
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.AssemblyInfoInputs.cache
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.AssemblyInfo.cs
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.csproj.CoreCompileInputs.cache
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.sourcelink.json
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.dll
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/refint/AuctionDemo.Model.dll
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.pdb
+/workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/ref/AuctionDemo.Model.dll
