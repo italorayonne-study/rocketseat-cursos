@@ -1,5 +1,6 @@
 using AuctionDemo.Infra.Data.Contexts;
 using AuctionDemo.Model.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuctionDemo.Infra.Data.Repositories;
 
@@ -14,7 +15,7 @@ public class AuctionRepository
 
     public List<Auction> GetAuctions()
     {
-        var auctions = _postgresqlContext.Auctions.ToList();
+        var auctions = _postgresqlContext.Auctions.Include(auctions => auctions.Items).ToList();
 
         return auctions;
     }
