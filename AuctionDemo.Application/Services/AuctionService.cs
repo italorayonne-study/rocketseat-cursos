@@ -22,7 +22,7 @@ public class AuctionService : IAuction
 
     }
 
-    public List<Auction> GetAuctions()
+    public List<Auction>? GetAuctions()
     {
         var auctions = _repository.GetAuctions();
 

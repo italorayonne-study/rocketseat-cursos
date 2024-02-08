@@ -13,9 +13,12 @@ public class AuctionRepository
         _postgresqlContext.SaveChanges();
     }
 
-    public List<Auction> GetAuctions()
+    public List<Auction>? GetAuctions()
     {
-        var auctions = _postgresqlContext.Auctions.Include(auctions => auctions.Items).ToList();
+        var auctions = _postgresqlContext.Auctions
+            .Include(auctions => auctions.Items)
+            .Where(auction => DateTime.Now >= auction.Starts && DateTime.Now <= auction.Ends)
+            .ToList();
 
         return auctions;
     }
