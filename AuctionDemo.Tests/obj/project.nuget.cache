@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Svi8FDuDqwBbOIueDZcErP+V++yPjLvIHNmyqpZ13ouO2YLLBVAZ0YphOZshfwukc4Vgf1gF3kYT2V1msxnOHg==",
+  "dgSpecHash": "Oi/o3XDmTycUphUKkupsqKr3Q3xpnXXtNki6nc7yQrUdP4MxQDDr4OmG644BedN1kAg1W/P6BaP3j827Nm5omg==",
   "success": true,
-  "projectFilePath": "/workspaces/AuctionDemo/AuctionDemo.Tests/AuctionDemo.Tests.csproj",
+  "projectFilePath": "/workspaces/rocketseat-cursos/AuctionDemo.Tests/AuctionDemo.Tests.csproj",
   "expectedPackageFiles": [
     "/home/vscode/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.codecoverage/17.6.0/microsoft.codecoverage.17.6.0.nupkg.sha512",

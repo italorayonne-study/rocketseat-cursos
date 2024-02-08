@@ -20,4 +20,12 @@ public class AuctionController() : ControllerBase
         return Ok(current);
 
     }
+
+    [HttpGet("create")]
+    public IActionResult Create()
+    {
+        _service!.Create();
+
+        return Created();
+    }
 }

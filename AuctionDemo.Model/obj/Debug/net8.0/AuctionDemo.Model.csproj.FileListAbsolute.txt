@@ -10,3 +10,15 @@
 /workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/refint/AuctionDemo.Model.dll
 /workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.pdb
 /workspaces/AuctionDemo/AuctionDemo.Model/obj/Debug/net8.0/ref/AuctionDemo.Model.dll
+/workspaces/rocketseat-cursos/AuctionDemo.Model/bin/Debug/net8.0/AuctionDemo.Model.deps.json
+/workspaces/rocketseat-cursos/AuctionDemo.Model/bin/Debug/net8.0/AuctionDemo.Model.dll
+/workspaces/rocketseat-cursos/AuctionDemo.Model/bin/Debug/net8.0/AuctionDemo.Model.pdb
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.AssemblyInfoInputs.cache
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.AssemblyInfo.cs
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.csproj.CoreCompileInputs.cache
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.sourcelink.json
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.dll
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/refint/AuctionDemo.Model.dll
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/AuctionDemo.Model.pdb
+/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/Debug/net8.0/ref/AuctionDemo.Model.dll

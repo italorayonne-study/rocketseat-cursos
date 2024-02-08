@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/AuctionDemo/AuctionDemo.Application/AuctionDemo.Application.csproj": {}
+    "/workspaces/rocketseat-cursos/AuctionDemo.Application/AuctionDemo.Application.csproj": {}
   },
   "projects": {
-    "/workspaces/AuctionDemo/AuctionDemo.Application/AuctionDemo.Application.csproj": {
+    "/workspaces/rocketseat-cursos/AuctionDemo.Application/AuctionDemo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/AuctionDemo/AuctionDemo.Application/AuctionDemo.Application.csproj",
+        "projectUniqueName": "/workspaces/rocketseat-cursos/AuctionDemo.Application/AuctionDemo.Application.csproj",
         "projectName": "AuctionDemo.Application",
-        "projectPath": "/workspaces/AuctionDemo/AuctionDemo.Application/AuctionDemo.Application.csproj",
+        "projectPath": "/workspaces/rocketseat-cursos/AuctionDemo.Application/AuctionDemo.Application.csproj",
         "packagesPath": "/home/vscode/.nuget/packages/",
-        "outputPath": "/workspaces/AuctionDemo/AuctionDemo.Application/obj/",
+        "outputPath": "/workspaces/rocketseat-cursos/AuctionDemo.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vscode/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspaces/AuctionDemo/AuctionDemo.Model/AuctionDemo.Model.csproj": {
-                "projectPath": "/workspaces/AuctionDemo/AuctionDemo.Model/AuctionDemo.Model.csproj"
+              "/workspaces/rocketseat-cursos/AuctionDemo.Infra.Data/AuctionDemo.Infra.Data.csproj": {
+                "projectPath": "/workspaces/rocketseat-cursos/AuctionDemo.Infra.Data/AuctionDemo.Infra.Data.csproj"
+              },
+              "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj": {
+                "projectPath": "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj"
               }
             }
           }
@@ -74,14 +77,87 @@
         }
       }
     },
-    "/workspaces/AuctionDemo/AuctionDemo.Model/AuctionDemo.Model.csproj": {
+    "/workspaces/rocketseat-cursos/AuctionDemo.Infra.Data/AuctionDemo.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/AuctionDemo/AuctionDemo.Model/AuctionDemo.Model.csproj",
-        "projectName": "AuctionDemo.Model",
-        "projectPath": "/workspaces/AuctionDemo/AuctionDemo.Model/AuctionDemo.Model.csproj",
+        "projectUniqueName": "/workspaces/rocketseat-cursos/AuctionDemo.Infra.Data/AuctionDemo.Infra.Data.csproj",
+        "projectName": "AuctionDemo.Infra.Data",
+        "projectPath": "/workspaces/rocketseat-cursos/AuctionDemo.Infra.Data/AuctionDemo.Infra.Data.csproj",
         "packagesPath": "/home/vscode/.nuget/packages/",
-        "outputPath": "/workspaces/AuctionDemo/AuctionDemo.Model/obj/",
+        "outputPath": "/workspaces/rocketseat-cursos/AuctionDemo.Infra.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vscode/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj": {
+                "projectPath": "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj",
+        "projectName": "AuctionDemo.Model",
+        "projectPath": "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj",
+        "packagesPath": "/home/vscode/.nuget/packages/",
+        "outputPath": "/workspaces/rocketseat-cursos/AuctionDemo.Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vscode/.nuget/NuGet/NuGet.Config"

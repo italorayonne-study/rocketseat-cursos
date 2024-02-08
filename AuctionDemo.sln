@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionDemo.Tests", "Auctio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionDemo.Model", "AuctionDemo.Model\AuctionDemo.Model.csproj", "{10716762-75CA-417E-B8CA-C3A946145526}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionDemo.Infra.Data", "AuctionDemo.Infra.Data\AuctionDemo.Infra.Data.csproj", "{A1B22266-3154-435F-8E28-A795F39C08AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{10716762-75CA-417E-B8CA-C3A946145526}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10716762-75CA-417E-B8CA-C3A946145526}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10716762-75CA-417E-B8CA-C3A946145526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B22266-3154-435F-8E28-A795F39C08AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B22266-3154-435F-8E28-A795F39C08AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B22266-3154-435F-8E28-A795F39C08AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B22266-3154-435F-8E28-A795F39C08AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

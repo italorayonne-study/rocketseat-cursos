@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MgGb0fTjduMoiPcEVkzLIsQwjr9EnqIAdLHblaXMmXW9Igz+zwFkUJhhJRH8BgFB99wGOLRVmaqZwjZdvKtuMg==",
+  "dgSpecHash": "HAXqP5Az9fLm/1GSm2wUYpxYCaz1OtqLhDAS7VwFSaeBCtYxmzfXh3aUCoRXd6wQgp+W3JIJ5uTftvJNFqbCfg==",
   "success": true,
-  "projectFilePath": "/workspaces/AuctionDemo/AuctionDemo.Model/AuctionDemo.Model.csproj",
+  "projectFilePath": "/workspaces/rocketseat-cursos/AuctionDemo.Model/AuctionDemo.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/AuctionDemo/AuctionDemo.Tests/AuctionDemo.Tests.csproj": {}
+    "/workspaces/rocketseat-cursos/AuctionDemo.Tests/AuctionDemo.Tests.csproj": {}
   },
   "projects": {
-    "/workspaces/AuctionDemo/AuctionDemo.Tests/AuctionDemo.Tests.csproj": {
+    "/workspaces/rocketseat-cursos/AuctionDemo.Tests/AuctionDemo.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/AuctionDemo/AuctionDemo.Tests/AuctionDemo.Tests.csproj",
+        "projectUniqueName": "/workspaces/rocketseat-cursos/AuctionDemo.Tests/AuctionDemo.Tests.csproj",
         "projectName": "AuctionDemo.Tests",
-        "projectPath": "/workspaces/AuctionDemo/AuctionDemo.Tests/AuctionDemo.Tests.csproj",
+        "projectPath": "/workspaces/rocketseat-cursos/AuctionDemo.Tests/AuctionDemo.Tests.csproj",
         "packagesPath": "/home/vscode/.nuget/packages/",
-        "outputPath": "/workspaces/AuctionDemo/AuctionDemo.Tests/obj/",
+        "outputPath": "/workspaces/rocketseat-cursos/AuctionDemo.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vscode/.nuget/NuGet/NuGet.Config"
