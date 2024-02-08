@@ -9,5 +9,5 @@ public class PostgresqlContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder
         .UseNpgsql("Host=localhost;Database=auction_demo;Username=maidensix;Password=M41d3nsix00");
     protected override void OnModelCreating(ModelBuilder modelBuilder) => modelBuilder
-        .HasPostgresExtension("uuid-ossp");
+        .HasPostgresExtension("uuid-ossp");    
 }

@@ -19,6 +19,10 @@
 # Mono auto generated files
 mono_crash.*
 
+# Custom Build results
+AuctionDemo.*/bin/*
+AuctionDemo.*/obj/*
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

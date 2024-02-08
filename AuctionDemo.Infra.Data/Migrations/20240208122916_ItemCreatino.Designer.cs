@@ -3,6 +3,7 @@ using System;
 using AuctionDemo.Infra.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AuctionDemo.Infra.Data.Migrations
 {
     [DbContext(typeof(PostgresqlContext))]
-    partial class PostgresqlContextModelSnapshot : ModelSnapshot
+    [Migration("20240208122916_ItemCreatino")]
+    partial class ItemCreatino
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,7 +53,10 @@ namespace AuctionDemo.Infra.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("AuctionId")
+                    b.Property<int>("AuctionId")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid?>("AuctionId1")
                         .HasColumnType("uuid");
 
                     b.Property<decimal>("BasePrice")
@@ -69,7 +75,7 @@ namespace AuctionDemo.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuctionId");
+                    b.HasIndex("AuctionId1");
 
                     b.ToTable("Item");
                 });
@@ -78,9 +84,7 @@ namespace AuctionDemo.Infra.Data.Migrations
                 {
                     b.HasOne("AuctionDemo.Model.Entities.Auction", null)
                         .WithMany("Items")
-                        .HasForeignKey("AuctionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AuctionId1");
                 });
 
             modelBuilder.Entity("AuctionDemo.Model.Entities.Auction", b =>

@@ -11,17 +11,17 @@ public class AuctionController() : ControllerBase
     private readonly AuctionService? _service = new();
 
 
-    [HttpGet("current")]
+    [HttpGet()]
     public IActionResult GetCurrent()
     {
 
-        var current = _service!.GetCurrent();
+        var current = _service!.GetAuctions();
 
         return Ok(current);
 
     }
 
-    [HttpGet("create")]
+    [HttpPost("create")]
     public IActionResult Create()
     {
         _service!.Create();

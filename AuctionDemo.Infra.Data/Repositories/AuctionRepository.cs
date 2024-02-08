@@ -8,7 +8,14 @@ public class AuctionRepository
     protected readonly PostgresqlContext _postgresqlContext = new();
     public void Create(Auction entity)
     {
-        _postgresqlContext.Set<Auction>().Add(entity);
+        _postgresqlContext.Auctions.Add(entity);
         _postgresqlContext.SaveChanges();
+    }
+
+    public List<Auction> GetAuctions()
+    {
+        var auctions = _postgresqlContext.Auctions.ToList();
+
+        return auctions;
     }
 }
