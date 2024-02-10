@@ -1,4 +1,5 @@
 using AuctionDemo.Application.Services;
+using AuctionDemo.Model.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuctionDemo.Application.Controllers;
@@ -11,7 +12,9 @@ public class AuctionController() : ControllerBase
     private readonly AuctionService? _service = new();
 
 
-    [HttpGet()]
+    [HttpGet]
+    [ProducesResponseType(typeof(Auction), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult GetCurrent()
     {
 
@@ -19,13 +22,5 @@ public class AuctionController() : ControllerBase
 
         return Ok(current);
 
-    }
-
-    [HttpPost("create")]
-    public IActionResult Create()
-    {
-        _service!.Create();
-
-        return Created();
     }
 }
