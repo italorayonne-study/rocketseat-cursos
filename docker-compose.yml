@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  auction-demo-postgres:
+    container_name: auction-demo-postgres
+    image: postgres
+
+    ports:
+      - 5432:5432
+
+    environment:
+      - POSTGRES_USER=maidensix
+      - POSTGRES_DB=auction_demo
+      - POSTGRES_PASSWORD=M41d3nsix00
