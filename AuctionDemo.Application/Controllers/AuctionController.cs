@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AuctionDemo.Application.Controllers;
 
-[Route("api/v1/[controller]")]
+[Route("[controller]")]
 [ApiController]
 
 public class AuctionController() : ControllerBase

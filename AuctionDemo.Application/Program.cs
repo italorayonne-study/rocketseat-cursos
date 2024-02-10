@@ -1,5 +1,3 @@
-using AuctionDemo.Infra.Data.Contexts;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +10,9 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var app = builder.Build();
 
+app.UsePathBase(new PathString("/api/v1"));
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -19,6 +20,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseRouting();
 app.UseHttpsRedirection();
 app.MapControllers();
 
