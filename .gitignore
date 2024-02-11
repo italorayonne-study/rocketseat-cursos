@@ -20,14 +20,14 @@
 mono_crash.*
 
 # Custom Build results
-AuctionDemo.Application/bin/*
-AuctionDemo.Application/obj/*
-AuctionDemo.Infra.Data/bin/*
-AuctionDemo.Infra.Data/obj/*
-AuctionDemo.Model/bin/*
-AuctionDemo.Model/obj/*
-AuctionDemo.Tests/bin/*
-AuctionDemo.Tests/obj/*
+//AuctionDemo.Application/bin/
+/AuctionDemo.Application/obj/
+/AuctionDemo.Infra.Data/bin/
+/AuctionDemo.Infra.Data/obj/
+/AuctionDemo.Model/bin/
+/AuctionDemo.Model/obj/
+/AuctionDemo.Tests/bin/
+/AuctionDemo.Tests/obj/
 
 # Build results
 [Dd]ebug/
@@ -492,3 +492,4 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/AuctionDemo.Application/bin

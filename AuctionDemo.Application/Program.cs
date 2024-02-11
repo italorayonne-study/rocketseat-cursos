@@ -1,6 +1,7 @@
 using AuctionDemo.Application.Interceptors;
 using AuctionDemo.Application.Services;
 using AuctionDemo.Filters;
+using AuctionDemo.Infra.Data.Repositories;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -46,6 +47,7 @@ builder.Services.AddMvc();
 builder.Services.AddScoped<AuthenticationUserAttribute>();
 builder.Services.AddScoped<LoggedUserInterceptor>();
 builder.Services.AddScoped<OfferService>();
+builder.Services.AddScoped<AuctionService>();
 
 builder.Services.AddHttpContextAccessor();
 

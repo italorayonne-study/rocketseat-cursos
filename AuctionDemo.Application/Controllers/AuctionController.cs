@@ -9,16 +9,14 @@ namespace AuctionDemo.Application.Controllers;
 
 public class AuctionController() : ControllerBase
 {
-    private readonly AuctionService? _service = new();
-
 
     [HttpGet]
     [ProducesResponseType(typeof(Auction), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    public IActionResult GetCurrent()
+    public IActionResult GetCurrent([FromServices] AuctionService service)
     {
 
-        var current = _service!.GetAuctions();
+        var current = service!.GetAuctions();
 
         return Ok(current);
 
