@@ -20,8 +20,14 @@
 mono_crash.*
 
 # Custom Build results
-AuctionDemo.*/bin/*
-AuctionDemo.*/obj/*
+AuctionDemo.Application/bin/*
+AuctionDemo.Application/obj/*
+AuctionDemo.Infra.Data/bin/*
+AuctionDemo.Infra.Data/obj/*
+AuctionDemo.Model/bin/*
+AuctionDemo.Model/obj/*
+AuctionDemo.Tests/bin/*
+AuctionDemo.Tests/obj/*
 
 # Build results
 [Dd]ebug/
