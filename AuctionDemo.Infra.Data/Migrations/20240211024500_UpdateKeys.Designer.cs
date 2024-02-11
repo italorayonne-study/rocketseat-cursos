@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AuctionDemo.Infra.Data.Migrations
 {
     [DbContext(typeof(PostgresqlContext))]
-    [Migration("20240208122916_ItemCreatino")]
-    partial class ItemCreatino
+    [Migration("20240211024500_UpdateKeys")]
+    partial class UpdateKeys
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,10 +53,7 @@ namespace AuctionDemo.Infra.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<int>("AuctionId")
-                        .HasColumnType("integer");
-
-                    b.Property<Guid?>("AuctionId1")
+                    b.Property<Guid>("AuctionId")
                         .HasColumnType("uuid");
 
                     b.Property<decimal>("BasePrice")
@@ -75,16 +72,60 @@ namespace AuctionDemo.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuctionId1");
+                    b.HasIndex("AuctionId");
 
-                    b.ToTable("Item");
+                    b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("AuctionDemo.Model.Entities.Offer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("ItemId")
+                        .HasColumnType("uuid");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Offers");
+                });
+
+            modelBuilder.Entity("AuctionDemo.Model.Entities.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("AuctionDemo.Model.Entities.Item", b =>
                 {
                     b.HasOne("AuctionDemo.Model.Entities.Auction", null)
                         .WithMany("Items")
-                        .HasForeignKey("AuctionId1");
+                        .HasForeignKey("AuctionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("AuctionDemo.Model.Entities.Auction", b =>
