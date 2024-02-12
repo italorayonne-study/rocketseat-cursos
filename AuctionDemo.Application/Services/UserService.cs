@@ -1,4 +1,5 @@
 using AuctionDemo.Infra.Data.Repositories;
+using AuctionDemo.Model.Commands;
 using AuctionDemo.Model.Entities;
 using AuctionDemo.Model.Interfaces;
 
@@ -8,6 +9,18 @@ public class UserService : IUser
 {
 
     private readonly UserRepository _repository = new();
+
+    public void Create(CreateUserCommandRequest request)
+    {
+        var user = new User
+        {
+            Email = request.Email,
+            Name = request.Name
+        };
+
+        _repository.Create(user);
+
+    }
 
     public bool ExistsByEmail(string email)
     {

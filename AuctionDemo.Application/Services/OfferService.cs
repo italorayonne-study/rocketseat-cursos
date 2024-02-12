@@ -25,4 +25,11 @@ public class OfferService(LoggedUserInterceptor loggedUser) : IOffer
 
         _repository.Create(offer);
     }
+
+    public List<Offer> GetAll()
+    {
+        var offers = _repository.GetAll();
+
+        return offers;
+    }
 }

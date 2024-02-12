@@ -12,4 +12,11 @@ public class OfferRepository
         _postgresqlContext.Offers.Add(entity);
         _postgresqlContext.SaveChanges();
     }
+
+    public List<Offer> GetAll()
+    {
+        var offers = _postgresqlContext.Offers.ToList();
+
+        return offers;
+    }
 }

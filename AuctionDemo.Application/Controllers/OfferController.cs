@@ -11,6 +11,16 @@ namespace AuctionDemo.Application.Controllers;
 public class OfferController() : ControllerBase
 {
 
+    [HttpGet]
+    public IActionResult GetAll([FromServices] OfferService service)
+    {
+        var offers = service.GetAll();
+
+        if (offers.Count == 0) return NoContent();
+
+        return Ok(offers);
+    }
+
     [HttpPost("{itemId}")]
     public IActionResult CreateOffer([FromServices] OfferService service, [FromRoute] Guid itemId, [FromBody] CreateOfferCommandRequest request)
     {

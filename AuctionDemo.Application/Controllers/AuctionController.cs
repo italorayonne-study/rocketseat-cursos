@@ -19,6 +19,5 @@ public class AuctionController() : ControllerBase
         var current = service!.GetAuctions();
 
         return Ok(current);
-
     }
 }

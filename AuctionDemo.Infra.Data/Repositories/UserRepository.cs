@@ -1,4 +1,5 @@
 using AuctionDemo.Infra.Data.Contexts;
+using AuctionDemo.Model.Commands;
 using AuctionDemo.Model.Entities;
 
 namespace AuctionDemo.Infra.Data.Repositories;
@@ -17,5 +18,12 @@ public class UserRepository
         var user = _context.Users.First(user => user.Email.Equals(email));
 
         return user;
+    }
+
+    public void Create(User entity)
+    {
+        _context.Users.Add(entity);
+        _context.SaveChanges();
+
     }
 }

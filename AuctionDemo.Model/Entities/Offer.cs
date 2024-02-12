@@ -10,4 +10,5 @@ public class Offer
     public decimal Price { get; set; }
     public Guid UserId { get; set; }
     public Guid ItemId { get; set; }
+
 }
