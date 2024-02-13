@@ -1,6 +1,5 @@
 using AuctionDemo.Application.Services;
 using AuctionDemo.Model.Commands;
-using AuctionDemo.Model.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuctionDemo.Application.Controllers;
