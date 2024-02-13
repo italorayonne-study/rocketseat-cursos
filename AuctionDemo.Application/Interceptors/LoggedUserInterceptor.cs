@@ -4,12 +4,12 @@ using AuctionDemo.Model.Entities;
 
 namespace AuctionDemo.Application.Interceptors;
 
-public class LoggedUserInterceptor(IHttpContextAccessor context)
+public class LoggedUserInterceptor(IHttpContextAccessor context, UserService service)
 {
     private readonly IHttpContextAccessor _context = context;
-    private readonly UserService _service = new();
+    private readonly UserService _service = service;
 
-    public User User()
+    public User? User()
     {
         var token = TokenOnRequest();
         var email = FromBase64String(token);

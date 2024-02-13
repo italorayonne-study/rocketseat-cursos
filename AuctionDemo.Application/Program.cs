@@ -56,6 +56,8 @@ builder.Services.AddScoped<OfferService>();
 builder.Services.AddScoped<AuctionService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
+builder.Services.AddScoped<IOfferRepository, OfferRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddHttpContextAccessor();
 

@@ -16,7 +16,7 @@ public class AuctionController() : ControllerBase
     public IActionResult GetCurrent([FromServices] AuctionService service)
     {
 
-        var current = service!.GetAuctions();
+        var current = service.GetAuctions();
 
         return Ok(current);
     }

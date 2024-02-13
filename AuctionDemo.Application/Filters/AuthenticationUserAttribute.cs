@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace AuctionDemo.Filters;
 
-public class AuthenticationUserAttribute : AuthorizeAttribute, IAuthorizationFilter
+public class AuthenticationUserAttribute(UserService service) : AuthorizeAttribute, IAuthorizationFilter
 {
-    private readonly UserService _service = new();
+    private readonly UserService _service = service;
     public void OnAuthorization(AuthorizationFilterContext context)
     {
         try

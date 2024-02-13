@@ -1,29 +1,33 @@
 using AuctionDemo.Infra.Data.Contexts;
+using AuctionDemo.Infra.Data.Interfaces;
 using AuctionDemo.Model.Commands;
 using AuctionDemo.Model.Entities;
 
 namespace AuctionDemo.Infra.Data.Repositories;
 
-public class UserRepository
+public class UserRepository(PostgresqlContext context) : IUserRepository
 {
-    private readonly PostgresqlContext _context;
+    private readonly PostgresqlContext _postgresqlContext = context;
 
     public bool ExistsByEmail(string email)
     {
-        return _context.Users.Any(source => source.Email.Equals(email));
+        return _postgresqlContext.Users
+            .Any(source => source.Email
+                .Equals(email));
     }
 
-    public User GetByEmail(string email)
+    public User? GetByEmail(string email)
     {
-        var user = _context.Users.First(user => user.Email.Equals(email));
+        var user = _postgresqlContext.Users
+            .First(user => user.Email
+                .Equals(email));
 
         return user;
     }
 
     public void Create(User entity)
     {
-        _context.Users.Add(entity);
-        _context.SaveChanges();
-
+        _postgresqlContext.Users.Add(entity);
+        _postgresqlContext.SaveChanges();
     }
 }

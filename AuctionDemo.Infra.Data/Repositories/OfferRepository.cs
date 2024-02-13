@@ -1,11 +1,12 @@
 using AuctionDemo.Infra.Data.Contexts;
+using AuctionDemo.Infra.Data.Interfaces;
 using AuctionDemo.Model.Entities;
 
 namespace AuctionDemo.Infra.Data.Repositories;
 
-public class OfferRepository
+public class OfferRepository(PostgresqlContext context) : IOfferRepository
 {
-    protected readonly PostgresqlContext _postgresqlContext;
+    protected readonly PostgresqlContext _postgresqlContext = context;
 
     public void Create(Offer entity)
     {
@@ -13,9 +14,10 @@ public class OfferRepository
         _postgresqlContext.SaveChanges();
     }
 
-    public List<Offer> GetAll()
+    public List<Offer>? GetAll()
     {
-        var offers = _postgresqlContext.Offers.ToList();
+        var offers = _postgresqlContext
+            .Offers.ToList();
 
         return offers;
     }

@@ -1,15 +1,14 @@
 using AuctionDemo.Application.Interceptors;
-using AuctionDemo.Infra.Data.Repositories;
+using AuctionDemo.Infra.Data.Interfaces;
 using AuctionDemo.Model.Commands;
 using AuctionDemo.Model.Entities;
-using AuctionDemo.Model.Interfaces;
 
 namespace AuctionDemo.Application.Services;
 
-public class OfferService(LoggedUserInterceptor loggedUser) : IOffer
+public class OfferService(LoggedUserInterceptor loggedUser, IOfferRepository repository)
 {
     private readonly LoggedUserInterceptor _loggedUser = loggedUser;
-    private readonly OfferRepository _repository = new();
+    private readonly IOfferRepository _repository = repository;
 
     public void Create(Guid itemId, CreateOfferCommandRequest request)
     {
@@ -26,7 +25,7 @@ public class OfferService(LoggedUserInterceptor loggedUser) : IOffer
         _repository.Create(offer);
     }
 
-    public List<Offer> GetAll()
+    public List<Offer>? GetAll()
     {
         var offers = _repository.GetAll();
 
