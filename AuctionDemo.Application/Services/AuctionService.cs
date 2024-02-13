@@ -1,16 +1,16 @@
-using AuctionDemo.Infra.Data.Repositories;
+using AuctionDemo.Infra.Data.Interfaces;
 using AuctionDemo.Model.Entities;
 using AuctionDemo.Model.Interfaces;
 
 namespace AuctionDemo.Application.Services;
 
-public class AuctionService : IAuction
+public class AuctionService(IAuctionRepository repository)
 {
-    private readonly AuctionRepository _repository = new();
+    private readonly IAuctionRepository? _repository = repository;
 
-    public List<Auction> GetAuctions()
+    public List<Auction>? GetAuctions()
     {
-        var auctions = _repository.GetAuctions();
+        var auctions = _repository!.GetAuctions();
 
         return auctions;
     }

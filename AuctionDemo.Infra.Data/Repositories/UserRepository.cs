@@ -6,7 +6,7 @@ namespace AuctionDemo.Infra.Data.Repositories;
 
 public class UserRepository
 {
-    private readonly PostgresqlContext _context = new();
+    private readonly PostgresqlContext _context;
 
     public bool ExistsByEmail(string email)
     {

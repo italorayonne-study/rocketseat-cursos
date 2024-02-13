@@ -5,7 +5,7 @@ namespace AuctionDemo.Infra.Data.Repositories;
 
 public class OfferRepository
 {
-    protected readonly PostgresqlContext _postgresqlContext = new();
+    protected readonly PostgresqlContext _postgresqlContext;
 
     public void Create(Offer entity)
     {

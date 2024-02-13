@@ -4,6 +4,6 @@ namespace AuctionDemo.Model.Interfaces;
 
 public interface IAuction
 {
-    List<Auction> GetAuctions();
+    List<Auction>? GetAuctions();
 
 }
