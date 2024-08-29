@@ -1,3 +1,3 @@
 export interface BaseComponentAttributes {
-    className: string | undefined
+    className?: string | undefined
 }
