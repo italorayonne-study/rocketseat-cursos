@@ -7,7 +7,8 @@
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
-		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {}
+		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+		"ghcr.io/devcontainers/features/docker-in-docker": {}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -24,7 +25,9 @@
 		"vscode": {
 			"extensions": [
 				"alfredbirk.tailwind-documentation",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"biomejs.biome",
+				"cweijan.vscode-database-client2"
 			]
 		}
 	}
